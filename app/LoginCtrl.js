@@ -21,7 +21,7 @@ var LoginCtrl = function($scope,$http,$rootScope,$upload,$location){
                 }
                 else if($rootScope.error){
                     $rootScope.authenticated = 0;
-                };
+                }
             });
     };
 };
