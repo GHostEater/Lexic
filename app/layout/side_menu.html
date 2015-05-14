@@ -1,0 +1,7 @@
+<aside ng-class="{'col-sm-2 aside': menu === 1}" ng-show="authenticated===1">
+    <button class="btn btn-primary" ng-click="menuToggle()"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+    <ul class="nav nav-pills nav-stacked" ng-show="menu === 1">
+        <hr>
+        <li ng-class="{'active':page==='home'}"><a href="#/"><span class="glyphicon glyphicon-home"></span>&nbsp Home</a></li>
+        </ul>
+</aside>

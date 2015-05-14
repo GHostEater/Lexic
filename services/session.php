@@ -1,7 +1,6 @@
 <?php
-
-header("Content-Type: application/json");
 session_start();
+header("Content-Type: application/json");
 
 // $_SESSION['username'] = "jagz";
 

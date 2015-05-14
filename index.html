@@ -2,29 +2,30 @@
 <html ng-app="lexic">
 <head>
 
-  <meta charset="utf-8">
-  <title>Lexic</title>
+    <meta charset="utf-8">
+    <title>Lexic</title>
 
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/custom.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
-  <script src="js/angular.js"></script>
-  <script src="js/angular-route.min.js"></script>
-  <script src="js/angular-animate.js"></script>
-  <script src="js/angular-sanitize.min.js"></script>
-  <script src="js/lodash.min.js"></script>
-  <script src="js/angular-file-upload-all.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular-animate.js"></script>
+    <script src="js/angular-sanitize.min.js"></script>
+    <script src="js/lodash.min.js"></script>
+    <script src="js/angular-file-upload-all.js"></script>
 
-  <script src="app/app.js"></script>
-  <script src="app/HomeCtrl.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/HomeCtrl.js"></script>
     <script src="app/LoginCtrl.js"></script>
+    <script src="app/LogoutCtrl.js"></script>
 
-  <script src="js/jquery-1.11.2.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/respond.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/respond.min.js"></script>
 
-  <script src="js/tinymce/tinymce.min.js"></script>
-  <script src="js/tinymceBind.js"></script>
+    <script src="js/tinymce/tinymce.min.js"></script>
+    <script src="js/tinymceBind.js"></script>
 
 </head>
 
@@ -33,10 +34,11 @@
 <div ng-include="'app/layout/header.html'"></div>
 
   <div class="container overall">
-    <div class="container-fluid mainBody">
-      <div ng-view>
+    <div class="container-fluid mainBody content">
+        <div ng-include="'app/layout/side_menu.html'"></div>
+        <div ng-class="{'col-sm-10': menu === 1,'row':menu===0}" ng-view>
 
-      </div>
+        </div>
     </div>
     <footer>Footer</footer>
   </div>

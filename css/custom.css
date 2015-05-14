@@ -69,6 +69,27 @@ ul.nav-tabs{
 	padding-right: 42%;
 }
 
+/*Side-Menu Styles*/
+.aside{
+    border-right: 1px solid lavender;
+    background-color: #fff;
+}
+ul.nav-stacked li a,ul.nav-stacked li a:focus{
+
+}
+ul.nav-stacked li a:hover{
+
+}
+ul.nav-stacked li.active a{
+
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+
+}
+
+
 /*MainBody Styles*/
 .overall{
 	margin-bottom: 20px;
@@ -81,8 +102,7 @@ ul.nav-tabs{
 	background-color: white;
 }
 .content{
-	padding: 20px 20px 10px 20px;
-	margin-bottom: 10px;
+	padding: 10px 10px 10px 10px;;
 	overflow: hidden;
 }
 .btn-back{

@@ -1,7 +1,13 @@
 <?php
-header("Content-Type: application/json");
+
 session_start();
 
+header('Content-Type: application/json');
+
 session_destroy();
-echo json_encode("success");
+
+$resArr = array('loggedout' => "Logged Out");
+
+echo json_encode($resArr);
+
 ?>
