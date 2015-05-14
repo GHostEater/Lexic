@@ -1,0 +1,118 @@
+img.pull-left{
+	padding-right: 0.5em;
+}
+body{
+	font-size: 1.2em;
+}
+
+/* NavBar Styles */
+nav.navbar{
+	margin-bottom: 0;
+}
+a.navbar-brand{
+	padding-top: 2px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+div.collapse form.navbar-form div.form-group input{
+	width: 300px;
+	border-radius: 0px;
+}
+div.collapse form.navbar-form div.form-group button{
+	width: 70px;
+	border-radius: 0px;
+}
+div.collapse form.navbar-form div.form-group a{
+	border-radius: 0px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+
+/* Style for main-body tabs */
+
+ul.nav-tabs li.active a{
+	border-top: none;
+	border-bottom: 4px solid gold;
+	border-left: none;
+	border-right: none;
+	border-radius: 0px;
+	color: gold;
+}
+ul.nav-tabs li.active a:hover{
+	border-top: none;
+	border-bottom: 4px solid gold;
+	border-left: none;
+	border-right: none;
+	border-radius: 0px;
+	color: gold;
+}
+ul.nav-tabs li a:hover{
+	border-top: none;
+	border-bottom: 4px solid gold;
+	border-left: none;
+	border-right: none;
+	border-radius: 0px;
+	background-color: #fff;
+	color: gold;
+}
+ul.nav-tabs li a{
+	border-top: none;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	border-radius: 0px;
+	color: #676767;
+}
+ul.nav-tabs{
+	padding-left: 42%;
+	padding-right: 42%;
+}
+
+/*MainBody Styles*/
+.overall{
+	margin-bottom: 20px;
+	padding: 0;
+	background-color: rgba(72, 72, 165, 0.8);
+	border-radius: 0 0 20px 20px;
+}
+.mainBody{
+	margin: 0 50px 0 50px;
+	background-color: white;
+}
+.content{
+	padding: 20px 20px 10px 20px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.btn-back{
+	padding: 10px 10px 10px 35px;
+
+	border-bottom: 1px solid lavender;
+}
+.list-item{
+	opacity: 0.9;
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+}
+.list-item.ng-enter.ng-enter-active,
+.list-item.ng-leave {
+  opacity: 1;
+  height: 80px;
+  overflow: hidden;
+}
+.list-item.ng-leave.ng-leave-active,
+.list-item.ng-enter {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+footer{
+	padding: 10px 0 10px 0;
+	background-color: #707070;
+	text-align: center;
+	color: #ededed;
+	font-size: 1.1em;
+	border-radius: 0 0 20px 20px;
+}

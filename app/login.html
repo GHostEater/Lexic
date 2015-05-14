@@ -1,0 +1,23 @@
+<div ng-show="authenticated === 0">
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <form>
+                <fieldset>
+                    <legend>Login Form</legend>
+                    <input type="text" class="form-control" placeholder="Username" ng-model="username">
+                    <input type="password" class="form-control" placeholder="password" ng-model="password">
+                    <button type="submit" class="btn btn-primary" ng-click="submit()">Sign in</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+<div ng-show="authenticated === 1">
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <h4>You are Already Logged in.<br>Click Below to go Home</h4><br>
+            <a href="#/" class="btn btn-primary">Home</a>
+        </div>
+    </div>
+</div>
+{{authenticated}}
