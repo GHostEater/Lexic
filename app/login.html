@@ -1,12 +1,26 @@
 <div ng-show="authenticated === 0">
     <div class="row">
         <div class="col-sm-4 col-sm-offset-4">
-            <form>
+            <div class="row" ng-show="formSelect === 0">
+                <button class="btn btn-primary btn-lg col-sm-offset-1 col-sm-5" ng-click="formSelectAdmin()">Admin Login</button>
+                <button class="btn btn-primary btn-lg col-sm-offset-1 col-sm-5" ng-click="formSelectStaff()">Staff Login</button>
+            </div>
+            <form ng-show="formSelect === 1">
+                <a class="btn btn-primary" ng-click="formSelectCancel()">Cancel</a>
                 <fieldset>
-                    <legend>Login Form</legend>
-                    <input type="text" class="form-control" placeholder="Username" ng-model="username">
-                    <input type="password" class="form-control" placeholder="password" ng-model="password">
-                    <button type="submit" class="btn btn-primary" ng-click="submit()">Sign in</button>
+                    <legend>Staff Login Form</legend>
+                    <input type="text" class="form-control" placeholder="Username" ng-model="staff.username">
+                    <input type="password" class="form-control" placeholder="password" ng-model="staff.password">
+                    <button type="submit" class="btn btn-primary" ng-click="submitStaff()">Sign in</button>
+                </fieldset>
+            </form>
+            <form ng-show="formSelect === 2">
+                <a class="btn btn-primary" ng-click="formSelectCancel()">Cancel</a>
+                <fieldset>
+                    <legend>Admin Login Form</legend>
+                    <input type="text" class="form-control" placeholder="Username" ng-model="admin.username">
+                    <input type="password" class="form-control" placeholder="password" ng-model="admin.password">
+                    <button type="submit" class="btn btn-primary" ng-click="submitAdmin()">Sign in</button>
                 </fieldset>
             </form>
         </div>
@@ -15,8 +29,8 @@
 <div ng-show="authenticated === 1">
     <div class="row">
         <div class="col-sm-4 col-sm-offset-4">
-            <h4>You are Already Logged in.<br>Click Below to go Home</h4><br>
-            <a href="#/" class="btn btn-primary">Home</a>
+            <h4>You are Already Logged in.<br>Click Below to Logout</h4><br>
+            <a href="#/logout" class="btn btn-primary">Logout</a>
         </div>
     </div>
 </div>

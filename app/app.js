@@ -2,10 +2,18 @@ var app = angular.module("lexic",['ngRoute','ngSanitize','ngAnimate','angularFil
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
-      .when('/', {
-          templateUrl: 'app/home.html',
-          controller: 'HomeCtrl'
+      .when('/admin/home', {
+          templateUrl: 'app/adminHome.html',
+          controller: 'AdminHomeCtrl'
         })
+      .when('/staff/home', {
+          templateUrl: 'app/staffHome.html',
+          controller: 'StaffHomeCtrl'
+      })
+      .when('/staff/sell',{
+          templateUrl: 'app/staffSell.html',
+          controller: 'StaffSellCtrl'
+      })
       .when('/login', {
           templateUrl: 'app/login.html',
           controller: 'LoginCtrl'
